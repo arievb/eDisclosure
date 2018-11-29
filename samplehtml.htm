@@ -5,7 +5,7 @@
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
   />
   <style>
-    .menu {
+    .menu-bar {
       color: white;
       width: 100%;
     }
@@ -14,8 +14,7 @@
       background: #000;
       float:left;
     }
-    .menu-button,
-    .nav {
+    .menu {
       width: 80%;
       background: #000;
       text-align: -webkit-right;
@@ -55,10 +54,26 @@
       .menu-button {
         display: block;
       }
-      .nav,
+      .nav ul {
+        display:none;
+      }
       .topBannerLarge, 
       .topMenu {
         display: none;
+      }
+      .menu {
+		    position: absolute;
+        right: 8px;
+	    }
+      .nav li {
+        text-align: center;
+        width: 100%;
+	      padding: 10px 0;
+	      margin: 0;
+      }
+      .menu:hover ul {
+        display: block !important;
+        color: red;
       }
     }
   </style>
@@ -66,25 +81,27 @@
 <body style="font-family:verdana; font-size:1em">
 <img src="top2.png" width="100%" class="topBannerLarge">
 <img src="top3.png" width="100%" class="topBannerSmall">
-<div class="menu">
+<div class="menu-bar">
   <div class="home">
     <ul>
       <li>Home</li>
     </ul>
   </div>
-  <div class="nav">
-    <ul>
-      <li>eLearning</li>
-      <li>Contacts</li>
-      <li>Activate</li>
-      <li>Register</li>
-      <li>Login</li>
-    </ul>
-  </div>
-  <div class="menu-button">
-    <ul>
-      <li>&#9776;</li>
-    </ul>
+  <div class="menu">
+    <div class="menu-button">
+      <ul>
+        <li>&#9776;</li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>eLearning</li>
+        <li>Contacts</li>
+        <li>Activate</li>
+        <li>Register</li>
+        <li>Login</li>
+      </ul>
+    </div>
   </div>
 </div>
 <h2>Welcome to eDisclosure</h2>
