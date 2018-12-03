@@ -34,6 +34,13 @@
     	padding: 5px;
       height: 1em;
     }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .disabledmenu {
+      color: #AAAAAA;
+    }
     @media screen and (min-width: 561px) {
       body {
         xcolor:green;
@@ -55,6 +62,13 @@
         text-align: left;
         width:55%;
         float: right;
+      }
+      .fieldvalue input {
+        margin-left:10px;
+      }
+      .buttons {
+        float: left;
+        width:100%;
       }
     }
     @media screen and (max-width: 560px) {
@@ -96,6 +110,10 @@
         text-align: left;
         width:100%;
       }
+      .buttons {
+        text-align: left;
+        width:100%;
+      }
     }
   </style>
 </head>
@@ -105,7 +123,7 @@
 <div class="menu-bar">
   <div class="home">
     <ul>
-      <li>Home</li>
+      <li><a href="samplehtml.htm">Home</a></li>
     </ul>
   </div>
   <div class="menu">
@@ -120,7 +138,7 @@
         <li>Contacts</li>
         <li>Activate</li>
         <li>Register</li>
-        <li>Login</li>
+        <li class="disabledmenu">Login</li>
       </ul>
     </div>
   </div>
@@ -128,11 +146,15 @@
 <h2><center>eDisclosure&nbsp;Login</center></h2>
 <h3><center>Username and password required</center></h3>
 <div><center>
-<div class="fieldname">Username</div><div class="fieldvalue"><input /></div>
-<div class="fieldname">Password</div><div class="fieldvalue"><input /></div>
-<div class="fieldname"><input type="checkbox" /></div><div class="fieldvalue">Change password</div>
-</center></div>
-<br>
+<div class="fieldname">Username</div>
+<div class="fieldvalue"><input /></div>
+<div class="fieldname">Password</div>
+<div class="fieldvalue"><input /></div>
+<div class="fieldname">Change password</div>
+<div class="fieldvalue"><input type="checkbox" /></div>
+<div class="buttons"><input type="button" value="Login"/></div>
+</center>
+</div>
 <table style="background-color:black; color:white" width="100%">
   <tr>
     <td>
