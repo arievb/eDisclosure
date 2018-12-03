@@ -34,10 +34,6 @@
     	padding: 5px;
       height: 1em;
     }
-    a {
-      text-decoration: none;
-      color: white;
-    }
     @media screen and (min-width: 561px) {
       body {
         xcolor:green;
@@ -49,6 +45,16 @@
       }
       .nav {
         display: block;
+      }
+      .fieldname {
+        text-align: right;
+        width:45%;
+        float: left;
+      }
+      .fieldvalue {
+        text-align: left;
+        width:55%;
+        float: right;
       }
     }
     @media screen and (max-width: 560px) {
@@ -82,6 +88,14 @@
       .menu:hover ul {
         display: block;
       }
+      .fieldname {
+        text-align: left;
+        width:100%;
+      }
+      .fieldvalue {
+        text-align: left;
+        width:100%;
+      }
     }
   </style>
 </head>
@@ -106,27 +120,18 @@
         <li>Contacts</li>
         <li>Activate</li>
         <li>Register</li>
-        <li><a href="samplehtmllogin.htm">Login</a></li>
+        <li>Login</li>
       </ul>
     </div>
   </div>
 </div>
-<h2>Welcome&nbsp;to&nbsp;eDisclosure</h2>
-<h3>Background</h3>
-In terms of the Public Service Regulations, 2016 (PSR, 2016), designated employees are required to disclose their financial interests (Chapter 2, Part 2).<br>
-In March 2017, the Minister for the Public Service and Administration (MPSA) issued a Determination and Directive on other categories of employees to disclose their financial interests.<br>
-In January 2018, the MPSA issued a Directive on the form to be used by SMS members and HODs to disclose their financial interests.<br>
-In terms of the two Directives, designated employees must use the electronic (eDisclosure) system to disclose their financial interests.
-
-<h3>Usage Requirements</h3>
-Registration is compulsory in order to use the system.<br>
-Use the links on the top menu bar to register or to login if already registered.<br>
-<br>
-I you have already registered on the system but not yet been activated, you can activate your account.<br>
-<br>
-If you need help with eDisclosure, you can lookup your department's contact.<br>
-<br>
-If you want to learn how the eDisclosure system works, you can go to the eLearning page.<br>
+<h2><center>eDisclosure&nbsp;Login</center></h2>
+<h3><center>Username and password required</center></h3>
+<div><center>
+<div class="fieldname">Username</div><div class="fieldvalue"><input /></div>
+<div class="fieldname">Password</div><div class="fieldvalue"><input /></div>
+<div class="fieldname"><input type="checkbox" /></div><div class="fieldvalue">Change password</div>
+</center></div>
 <br>
 <table style="background-color:black; color:white" width="100%">
   <tr>
