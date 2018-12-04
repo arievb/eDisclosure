@@ -41,6 +41,10 @@
     .disabledmenu {
       color: #AAAAAA;
     }
+    input:read-only {
+      color: #777777;
+      background-color:#EEEEEE;
+    }
     @media screen and (min-width: 561px) {
       body {
         xcolor:green;
@@ -63,9 +67,11 @@
         text-align: left;
         width:55%;
         float: right;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
       }
-      .fieldvalue input {
+      .fieldvalue input,
+      .fieldvalue select,
+      .fieldvalue span {
         margin-left:10px;
       }
       .buttons {
@@ -141,23 +147,38 @@
       <ul>
         <li>eLearning</li>
         <li>Contacts</li>
-        <li class="disabledmenu">Activate</li>
-        <li><a href="samplehtmlregister.htm">Register</li>
+        <li><a href="samplehtmlactivate.htm">Activate</a></li>
+        <li class="disabledmenu">Register</li>
         <li><a href="samplehtmllogin.htm">Login</a></li>
       </ul>
     </div>
   </div>
 </div>
-<h2><center>eDisclosure&nbsp;Activation</center></h2>
-<h4><center>Please check the inbox of the email address or sms in the mobile number you provided during registration for an OTP, then enter the OTP in the required field below</center></h4>
+<h2><center>eDisclosure&nbsp;Registration</center></h2>
+<h4><center>Your SA ID number has been verified against the employee register.<br>
+Please enter all the required fields to complete the registration</center></h4>
 <div><center>
-<div class="fieldname">OTP<font color="red"><b>*</b></font></div>
+<div class="fieldname">SA ID Number</div>
+<div class="fieldvalue"><input value="1234567890123" readonly /></div>
+<div class="fieldname">First Name</div>
+<div class="fieldvalue"><input value="Piet" readonly size="30" /></div>
+<div class="fieldname">Surname</div>
+<div class="fieldvalue"><input value="Pompies" readonly size="30" /></div>
+<div class="fieldname">Initials</div>
+<div class="fieldvalue"><input value="P" readonly size="5" /></div>
+<div class="fieldname">User Name<font color="red"><b>*</b></font></div>
 <div class="fieldvalue"><input /></div>
-<div class="fieldname">Username<font color="red"><b>*</b></font></div>
+<div class="fieldname">Password<font color="red"><b>*</b></font></div>
 <div class="fieldvalue"><input /></div>
-<div class="fieldname">SA ID Number<font color="red"><b>*</b></font></div>
+<div class="fieldname">Verify password<font color="red"><b>*</b></font></div>
 <div class="fieldvalue"><input /></div>
-<div class="buttons"><input type="button" value="Activate"/></div>
+<div class="fieldname">Cellphone Number<font color="red"><b>*</b></font></div>
+<div class="fieldvalue"><input size="15" /></div>
+<div class="fieldname">Telephone Number</div>
+<div class="fieldvalue"><input size="15" /></div>
+<div class="fieldname">E-mail address<font color="red"><b>*</b></font></div>
+<div class="fieldvalue"><input size="50" /></div>
+<div class="buttons"><input type="button" value="Register"/></div>
 </center>
 </div>
 <table style="background-color:black; color:white" width="100%">
