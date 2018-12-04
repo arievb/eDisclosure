@@ -4,129 +4,7 @@
      name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
   />
-  <style>
-    .menu-bar {
-      color: white;
-      width: 100%;
-    }
-    .home {
-      width: 20%;
-      background: #000;
-      float:left;
-    }
-    .menu {
-      width: 80%;
-      background: #000;
-      text-align: right;
-      float: right;
-    }
-    .menu-button ul,
-    .home ul,
-    .nav ul {
-	    list-style: none;
-      margin: 5px;
-      padding: 5px;
-    }
-    .menu-button li,
-    .home li,
-    .nav li {
-      display: inline-block;
-    	padding: 5px;
-      height: 1em;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .disabledmenu {
-      color: #AAAAAA;
-    }
-    input:read-only {
-      color: #777777;
-      background-color:#EEEEEE;
-    }
-    @media screen and (min-width: 561px) {
-      body {
-        xcolor:green;
-      }
-      .menu-button,
-      .topBannerSmall, 
-      .mobileMenu {
-        display: none;
-      }
-      .nav {
-        display: block;
-      }
-      .fieldname {
-        text-align: right;
-        width:45%;
-        float: left;
-        padding-bottom: 5px;
-      }
-      .fieldvalue {
-        text-align: left;
-        width:55%;
-        float: right;
-        padding-bottom: 3px;
-      }
-      .fieldvalue input,
-      .fieldvalue select,
-      .fieldvalue span {
-        margin-left:10px;
-      }
-      .buttons {
-        float: left;
-        width:100%;
-        padding-bottom: 5px;
-      }
-    }
-    @media screen and (max-width: 560px) {
-      body {
-        xcolor:red;
-      }
-      .menu-button {
-        display: block;
-      }
-      .nav ul {
-        display:none;
-      }
-      .topBannerLarge, 
-      .topMenu {
-        display: none;
-      }
-      .menu {
-		    position: absolute;
-        right: 8px;
-        width:40%;
-      }
-      .home {
-        width:60%;
-	    }
-      .nav li {
-        text-align: center;
-        width: 100%;
-	      padding: 10px 0;
-	      margin: 0;
-      }
-      .menu:hover ul {
-        display: block;
-      }
-      .fieldname {
-        text-align: left;
-        width:100%;
-      }
-      .fieldvalue {
-        text-align: left;
-        width:100%;
-        padding-bottom: 5px;
-      }
-      .buttons {
-        text-align: left;
-        width:100%;
-        padding-bottom: 5px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body style="font-family:verdana; font-size:1em">
 <img src="images/toplarge.png" width="100%" class="topBannerLarge">
@@ -162,11 +40,11 @@ Please enter all the required fields to complete the registration</center></h4>
 <div class="fieldname">SA ID Number</div>
 <div class="fieldvalue"><input value="1234567890123" readonly /></div>
 <div class="fieldname">First Name</div>
-<div class="fieldvalue"><input value="Piet" readonly size="30" /></div>
+<div class="fieldvalue"><input value="Arie" readonly size="30" /></div>
 <div class="fieldname">Surname</div>
-<div class="fieldvalue"><input value="Pompies" readonly size="30" /></div>
+<div class="fieldvalue"><input value="van Beest" readonly size="30" /></div>
 <div class="fieldname">Initials</div>
-<div class="fieldvalue"><input value="P" readonly size="5" /></div>
+<div class="fieldvalue"><input value="A" readonly size="5" /></div>
 <div class="fieldname">User Name<font color="red"><b>*</b></font></div>
 <div class="fieldvalue"><input /></div>
 <div class="fieldname">Password<font color="red"><b>*</b></font></div>

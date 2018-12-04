@@ -1,0 +1,160 @@
+    .menu-bar {
+      color: white;
+      width: 100%;
+    }
+    .home {
+      width: 20%;
+      background: #000;
+      float:left;
+    }
+    .menu {
+      width: 80%;
+      background: #000;
+      text-align: right;
+      float: right;
+    }
+    .menu-button ul,
+    .home ul,
+    .nav ul {
+	    list-style: none;
+      margin: 5px;
+      padding: 5px;
+    }
+    .menu-button li,
+    .home li,
+    .nav li {
+      display: inline-block;
+    	padding: 5px;
+      height: 1em;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .disabledmenu {
+      color: #AAAAAA;
+    }
+    input:read-only {
+      color: #777777;
+      background-color:#EEEEEE;
+    }
+    @media screen and (min-width: 561px) {
+      body {
+        xcolor:green;
+      }
+      .menu-button,
+      .topBannerSmall, 
+      .mobileMenu {
+        display: none;
+      }
+      .nav {
+        display: block;
+      }
+      .fieldname {
+        text-align: right;
+        width:45%;
+        float: left;
+        padding-bottom: 5px;
+      }
+      .fieldvalue {
+        text-align: left;
+        width:55%;
+        float: right;
+        padding-bottom: 3px;
+      }
+      .fieldvalue input,
+      .fieldvalue select,
+      .fieldvalue span {
+        margin-left:10px;
+      }
+      .buttons {
+        float: left;
+        width:100%;
+        padding-bottom: 5px;
+      }
+      .mainrow {
+        width:100%;
+        float: left;
+        border-bottom:1px solid black;
+        border-right:1px solid black;
+        border-left:1px solid black;
+      }
+      .mainrowheader {
+        border-top:1px solid black;
+      }
+      .mainleft {
+        width:59%;
+        float: left;
+        border-right:1px solid black;
+      }
+      .mainright {
+        width:40%;
+        float: right;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      body {
+        xcolor:red;
+      }
+      .menu-button {
+        display: block;
+      }
+      .nav ul {
+        display:none;
+      }
+      .topBannerLarge, 
+      .topMenu {
+        display: none;
+      }
+      .menu {
+		    position: absolute;
+        right: 8px;
+        width:40%;
+      }
+      .home {
+        width:60%;
+	    }
+      .nav li {
+        text-align: center;
+        width: 100%;
+	      padding: 10px 0;
+	      margin: 0;
+      }
+      .menu:hover ul {
+        display: block;
+      }
+      .fieldname {
+        text-align: left;
+        width:100%;
+      }
+      .fieldvalue {
+        text-align: left;
+        width:100%;
+        padding-bottom: 5px;
+      }
+      .buttons {
+        text-align: left;
+        width:100%;
+        padding-bottom: 5px;
+      }
+      .mainrow {
+        width:100%;
+        float: left;
+        border-bottom:1px solid black;
+        border-right:1px solid black;
+        border-left:1px solid black;
+      }
+      .mainrowheader {
+        border-top:1px solid black;
+      }
+      .mainleft {
+        width:50%;
+        float: left;
+        border-right:1px solid black;
+      }
+      .mainright {
+        width:49%;
+        float: right;
+      }
+    }
+
