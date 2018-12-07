@@ -4,6 +4,9 @@
     select {
       font-size: 100%;
     }
+    input {
+      font-size: 100%;
+    }
     .menu-bar {
       color: white;
       width: 100%;
