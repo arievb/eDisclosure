@@ -1,3 +1,9 @@
+    select option{
+      font-size: 100%;
+    }
+    select {
+      font-size: 100%;
+    }
     .menu-bar {
       color: white;
       width: 100%;
