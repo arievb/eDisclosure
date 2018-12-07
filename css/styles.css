@@ -83,13 +83,16 @@
         border-top:1px solid black;
       }
       .mainleft {
-        width:59%;
+        width:55%;
         float: left;
         border-right:1px solid black;
       }
       .mainright {
-        width:40%;
-        float: right;
+        xwidth:40%;
+        xfloat: left;
+      }
+      .contactsleft {
+        border-right:1px solid black;
       }
     }
     @media screen and (max-width: 560px) {
