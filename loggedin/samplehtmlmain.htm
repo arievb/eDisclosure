@@ -6,10 +6,13 @@
   />
   <title>Welcome Arie van Beest</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <script src="../scripts/resize.js" type="text/javascript"></script>
 </head>
-<body style="font-family:verdana; font-size:1em">
-<img src="../images/toplarge.png" width="100%" class="topBannerLarge">
-<img src="../images/topsmall.png" width="100%" class="topBannerSmall">
+<body style="font-family:verdana; font-size:0.9em" onload="ResizeContent();">
+<div id=divHeader>
+  <img src="../images/toplarge.png" width="100%" class="topBannerLarge">
+  <img src="../images/topsmall.png" width="100%" class="topBannerSmall">
+</div>
 <style>
 .column {
   float:left;
@@ -20,13 +23,8 @@
 .contentcolumn {
   width:80%;
 }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 </style>
-<div class="menu-bar clearfix">
+<div class="menu-bar clearfix" id=divMenu>
   <div class="home">
     <ul>
       <li>Main Menu</li>
@@ -43,17 +41,15 @@
         <li>eLearning</li>
         <li>Contacts</li>
         <li>My User Profile</li>
+        <li>Disclose</li>
+        <li>Submit</li>
         <li><a href="../samplehtml.htm">Logout</a></li>
       </ul>
     </div>
   </div>
 </div>
-<div class="clearfix">
-  <div class="column menucolumn">
-    Disclose<br>
-    Submit
-  </div>
-  <div class="column contentcolumn">
+<div class="content" id=divContent>
+  <div class="clearfix">
     <h2>Welcome&nbsp;Arie&nbsp;van&nbsp;Beest</h2>
     <h4>Background</h4>
     In terms of the Public Service Regulations, 2016 (PSR, 2016), designated employees are required to disclose their financial interests (Chapter 2, Part 2).<br>
@@ -96,16 +92,11 @@
     </div>
   </div>
 </div>
-<br>
-<table style="background-color:black; color:white" width="100%">
-  <tr>
-    <td>
-      <center>
-        Copyright 2018 the DPSA, Inc.<br>
-        Developed for the DPSA by SITA
-      </center>
-    </td>
-  </tr>
-</table>
+<div id=divFooter class="footer">
+  <center>
+    Copyright 2018 the DPSA, Inc.<br>
+    Developed for the DPSA by SITA
+  </center>
+</div>
 </body>
 </html>

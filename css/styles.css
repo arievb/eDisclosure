@@ -1,3 +1,7 @@
+    body {
+      xcolor: red;
+      font-size: 9pt;
+    }
     select option{
       font-size: 100%;
     }
@@ -7,14 +11,28 @@
     input {
       font-size: 100%;
     }
+    .footer {
+      width: 100%;
+      color: white;
+      background: #000;
+      font-size: 100%;
+    }
     .menu-bar {
       color: white;
       width: 100%;
+    }
+    .content {
+      overflow-y: auto;
     }
     .home {
       width: 20%;
       background: #000;
       float:left;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
     }
     .menu {
       width: 80%;
@@ -33,7 +51,7 @@
     .home li,
     .nav li {
       display: inline-block;
-    	padding: 5px;
+      padding: 5px;
       height: 1em;
     }
     a {
@@ -119,7 +137,7 @@
         display: none;
       }
       .menu {
-		    position: absolute;
+        position: absolute;
         right: 8px;
         width:40%;
       }
