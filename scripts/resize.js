@@ -8,4 +8,3 @@ function ResizeContent() {
 }
  
 window.onresize = function() {ResizeContent();};
-
