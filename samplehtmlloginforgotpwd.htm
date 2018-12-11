@@ -6,11 +6,14 @@
   />
   <title>eDisclosure Login</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/resize.js" type="text/javascript"></script>
 </head>
-<body style="font-family:verdana; font-size:1em">
-<img src="images/toplarge.png" width="100%" class="topBannerLarge">
-<img src="images/topsmall.png" width="100%" class="topBannerSmall">
-<div class="menu-bar">
+<body style="font-family:verdana; font-size:0.9em" onload="ResizeContent();">
+<div id=divHeader>
+  <img src="images/toplarge.png" width="100%" class="topBannerLarge">
+  <img src="images/topsmall.png" width="100%" class="topBannerSmall">
+</div>
+<div class="menu-bar clearfix" id=divMenu>
   <div class="home">
     <ul>
       <li><a href="samplehtml.htm">Home</a></li>
@@ -33,25 +36,23 @@
     </div>
   </div>
 </div>
-<h2><center>eDisclosure&nbsp;Password&nbsp;reset</center></h2>
-<h4><center>Please reset your password by entering your ID number</center></h4>
-<div><center>
-<div class="fieldname">SA ID Number<font color="red"><b>*</b></font></div>
-<div class="fieldvalue"><input /></div>
-<div class="buttons">
-<form action="samplehtmlactivate.htm"><input type="submit" value="Submit"/></form>
+<div class="content" id=divContent>
+  <h2><center>eDisclosure Password reset</center></h2>
+  <h4><center>Please reset your password by entering your ID number</center></h4>
+  <div><center>
+  <div class="fieldname">SA ID Number<font color="red"><b>*</b></font></div>
+  <div class="fieldvalue"><input /></div>
+  <div class="buttons">
+  <form action="samplehtmlactivate.htm"><input type="submit" value="Submit"/></form>
+  </div>
+  </center>
+  </div>
 </div>
-</center>
+<div id=divFooter class="footer">
+  <center>
+    Copyright 2018 the DPSA, Inc.<br>
+    Developed for the DPSA by SITA
+  </center>
 </div>
-<table style="background-color:black; color:white" width="100%">
-  <tr>
-    <td>
-      <center>
-        Copyright 2018 the DPSA, Inc.<br>
-        Developed for the DPSA by SITA
-      </center>
-    </td>
-  </tr>
-</table>
 </body>
 </html>
