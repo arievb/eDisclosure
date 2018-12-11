@@ -65,6 +65,10 @@
       color: #777777;
       background-color:#EEEEEE;
     }
+    .fieldrow {
+      width: 100%;
+      float: left;
+    }
     @media screen and (min-width: 561px) {
       body {
         xcolor:green;
@@ -83,11 +87,22 @@
         float: left;
         padding-bottom: 5px;
       }
+      .fieldnameX {
+        width:60%;
+        float: left;
+        padding-left: 2%;
+        text-align: left;
+      }
       .fieldvalue {
         text-align: left;
         width:55%;
         float: right;
         padding-bottom: 3px;
+      }
+      .fieldvalueX {
+        width:30%;
+        float: left;
+        text-align: right;
       }
       .fieldvalue input,
       .fieldvalue select,
@@ -157,10 +172,21 @@
         text-align: left;
         width:100%;
       }
+      .fieldnameX {
+        width:60%;
+        float: left;
+        padding-left: 2%;
+        text-align: left;
+      }
       .fieldvalue {
         text-align: left;
         width:100%;
         padding-bottom: 5px;
+      }
+      .fieldvalueX {
+        width:5%;
+        float: left;
+        text-align: right;
       }
       .buttons {
         text-align: left;
