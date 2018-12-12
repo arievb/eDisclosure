@@ -8,5 +8,5 @@ function ResizeContent() {
 }
  
 window.onresize = function() {ResizeContent();};
-//alert(window.innerHeight - window.outerHeight);
+alert(window.innerHeight - window.outerHeight);
 
