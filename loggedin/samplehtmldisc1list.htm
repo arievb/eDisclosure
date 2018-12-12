@@ -8,24 +8,78 @@
   <link rel="stylesheet" href="../css/styles.css">
   <style>
     .col1 {
-      width: 21%;
       float: left;
       text-align: center;
       border-right:1px solid black;
     }
     .col2 {
-      width: 38%;
       float: left;
       border-right:1px solid black;
     }
     .col3 {
-      width: 25%;
       float: left;
       border-right:1px solid black;
     }
     .col4 {
-      width: 15%;
       float: left;
+      border-right:1px solid black;
+    }
+    .col5 {
+      float: left;
+      border-right:1px solid black;
+    }
+    .col6 {
+      float: left;
+      border-right:1px solid black;
+    }
+    .col7 {
+      float: left;
+    }
+    @media screen and (min-width: 561px) {
+      .col1 {
+        width: 12%;
+      }
+      .col2 {
+        width: 28%;
+      }
+      .col3 {
+        width: 12%;
+      }
+      .col4 {
+        width: 12%;
+      }
+      .col5 {
+        width: 12%;
+      }
+      .col6 {
+        width: 12%;
+      }
+      .col7 {
+        width: 11%;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      .col1 {
+        width: 20%;
+      }
+      .col2 {
+        width: 38%;
+      }
+      .col3 {
+        display: none;
+      }
+      .col4 {
+        display: none;
+      }
+      .col5 {
+        width: 25%;
+      }
+      .col6 {
+        display: none;
+      }
+      .col7 {
+        width: 15%;
+      }
     }
     .mainrow {
       width: 99%;
@@ -82,21 +136,30 @@
     <center>
       <div class="mainrow mainrowheader">
         <div class="col1">Disclosure Period</div>
-        <div class="col2">Description<br><br class="smallbr"></div>
-        <div class="col3">Value<br><br class="smallbr"></div>
-        <div class="col4">Action<br><br class="smallbr"></div>
+        <div class="col2">Description<br><br></div>
+        <div class="col3">Registration number</div>
+        <div class="col4">Year model<br><br></div>
+        <div class="col5">Value<br><br></div>
+        <div class="col6">Outstanding value</div>
+        <div class="col7">Action<br><br></div>
       </div>
       <div class="mainrow">
         <div class="col1">2015 to 2016</div>
         <div class="col2">BMW X5<br><br class="smallbr"></div>
-        <div class="col3">R 1,000,000<br><br class="smallbr"></div>
-        <div class="col4"><img src="../images/lock.gif" height="14px"></div>
+        <div class="col3">ABC123GP</div>
+        <div class="col4">2015</div>
+        <div class="col5">R 1,000,000<br><br class="smallbr"></div>
+        <div class="col6">R 500,000<br><br class="smallbr"></div>
+        <div class="col7"><img src="../images/lock.gif" height="14px"></div>
       </div>
       <div class="mainrow">
-        <div class="col1">2016 to 2017</div>
+        <div class="col1">2015 to 2016</div>
         <div class="col2">BMW X6<br><br class="smallbr"></div>
-        <div class="col3">R 2,000,000<br><br class="smallbr"></div>
-        <div class="col4">
+        <div class="col3">ABC333GP</div>
+        <div class="col4">2017</div>
+        <div class="col5">R 2,000,000<br><br class="smallbr"></div>
+        <div class="col6">R 1,000,000<br><br class="smallbr"></div>
+        <div class="col7">
           <img src="../images/edit.gif" height="14px">
           <img src="../images/Delete.gif" height="14px">
         </div>
