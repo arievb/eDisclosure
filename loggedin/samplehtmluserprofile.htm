@@ -1,0 +1,85 @@
+<html>
+<head>
+  <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+  />
+  <title>eDisclosure User Profile</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../scripts/resize.js" type="text/javascript"></script>
+</head>
+<body style="font-family:verdana; font-size:0.9em" onload="ResizeContent();">
+<div id=divHeader>
+  <img src="../images/toplarge.png" width="100%" class="topBannerLarge">
+  <img src="../images/topsmall.png" width="100%" class="topBannerSmall">
+</div>
+<div class="menu-bar clearfix" id=divMenu>
+  <div class="home">
+    <ul>
+      <li>Main Menu</li>
+    </ul>
+  </div>
+  <div class="menu">
+    <div class="menu-button">
+      <ul>
+        <li>&#9776;</li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>eLearning</li>
+        <li>Contacts</li>
+        <li class="disabledmenu">My User Profile</li>
+        <li><a href="../loggedin/samplehtmlselectdisclosures.htm">Disclose</li>
+        <li>Submit</li>
+        <li><a href="../samplehtml.htm">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="content" id=divContent>
+  <h2><center>My eDisclosure Profile</center></h2>
+  <div>
+    <center>
+      <form action="samplehtmlactivate.htm">
+        <div class="fieldrow">
+          <div class="fieldname">Username</div>
+          <div class="fieldvalue"><input value="user1" readonly /></div>
+        </div>
+        <div class="fieldrow">
+          <div class="fieldname">Password</div>
+          <div class="fieldvalue"><input value="" size="30" /></div>
+        </div>
+        <div class="fieldrow">
+          <div class="fieldname">Verify Password</div>
+          <div class="fieldvalue"><input value="" size="30" /></div>
+        </div>
+        <div class="fieldrow">
+          <div class="fieldname">Cellphone Number</div>
+          <div class="fieldvalue"><input value="" size="15" /></div>
+        </div>
+        <div class="fieldrow">
+          <div class="fieldname">Telephone Number</div>
+          <div class="fieldvalue"><input size="15" /></div>
+        </div>
+        <div class="fieldrow">
+          <div class="fieldname">E-mail address</div>
+          <div class="fieldvalue"><input size="30" /></div>
+        </div>
+        <div class="fieldrow">
+          <div class="fieldname">Job Description Summary</div>
+          <div class="fieldvalue"><textarea cols="50" rows="5"></textarea></div>
+        </div>
+        <div class="buttons"><input type="submit" value="Update"/></div>
+      </form>
+    </center>
+  </div>
+</div>
+<div id=divFooter class="footer">
+  <center>
+    Copyright 2018 the DPSA, Inc.<br>
+    Developed for the DPSA by SITA
+  </center>
+</div>
+</body>
+</html>

@@ -40,22 +40,22 @@
         width: 12%;
       }
       .col2 {
-        width: 28%;
+        width: 39%;
       }
       .col3 {
-        width: 12%;
+        width: 10%;
       }
       .col4 {
         width: 12%;
       }
       .col5 {
-        width: 12%;
+        width: 14%;
       }
       .col6 {
-        width: 12%;
+        width: 14%;
       }
       .col7 {
-        width: 11%;
+        width: 10%;
       }
     }
     @media screen and (max-width: 560px) {
@@ -63,7 +63,7 @@
         width: 20%;
       }
       .col2 {
-        width: 38%;
+        width: 48%;
       }
       .col3 {
         display: none;
@@ -72,13 +72,13 @@
         display: none;
       }
       .col5 {
-        width: 25%;
+        width: 27%;
       }
       .col6 {
         display: none;
       }
       .col7 {
-        width: 15%;
+        width: 24%;
       }
     }
     .mainrow {
@@ -115,9 +115,9 @@
     <div class="nav">
       <ul>
         <li>eLearning</li>
-        <li>Contacts</li>
+        <li><a href="../loggedin/samplehtmldocumentlist.htm">Documents</a></li>
         <li>My User Profile</li>
-        <li><a href="../loggedin/samplehtmlselectdisclosures.htm">Disclose</li>
+        <li><a href="../loggedin/samplehtmlselectdisclosures.htm">Disclose</a></li>
         <li>Submit</li>
         <li><a href="../samplehtml.htm">Logout</a></li>
       </ul>
@@ -134,8 +134,16 @@
   </h2>
   <div>
     <center>
+      <div class="fieldrow">
+        <div class="fieldName">Previous Disclosure Period<font color="red"><b>*</b></font></div>
+        <div class="fieldValue">
+          <select>
+            <option>2015 to 2016</option>
+            <option selected>2016 to 2017</option>
+          </select>
+        </div>
+      </div>
       <div class="mainrow mainrowheader">
-        <div class="col1">Disclosure Period</div>
         <div class="col2">Description<br><br></div>
         <div class="col3">Registration number</div>
         <div class="col4">Year model<br><br></div>
@@ -144,24 +152,49 @@
         <div class="col7">Action<br><br></div>
       </div>
       <div class="mainrow">
-        <div class="col1">2015 to 2016</div>
-        <div class="col2">BMW X5<br><br class="smallbr"></div>
+        <div class="col2">BMW X5</div>
         <div class="col3">ABC123GP</div>
         <div class="col4">2015</div>
-        <div class="col5">R 1,000,000<br><br class="smallbr"></div>
-        <div class="col6">R 500,000<br><br class="smallbr"></div>
-        <div class="col7"><img src="../images/lock.gif" height="14px"></div>
+        <div class="col5">R 1,000,000</div>
+        <div class="col6">R 500,000</div>
+        <div class="col7"><input type="button" value="Copy" style="padding:0px" /></div>
       </div>
       <div class="mainrow">
-        <div class="col1">2015 to 2016</div>
-        <div class="col2">BMW X6<br><br class="smallbr"></div>
+        <div class="col2">Venter trailer</div>
+        <div class="col3">ABC124GP</div>
+        <div class="col4">2014</div>
+        <div class="col5">R 10,000</div>
+        <div class="col6">R 2,000</div>
+        <div class="col7"><input type="button" value="Copy" style="padding:0px" /></div>
+      </div>
+      <div class="fieldrow">
+        <br>
+      </div>
+      <div class="fieldrow">
+        <div class="fieldName">Current Disclosure Period<font color="red"><b>*</b></font></div>
+        <div class="fieldValue">
+          <select>
+            <option></option>
+            <option selected>2017 to 2018</option>
+          </select>
+        </div>
+      </div>
+      <div class="mainrow mainrowheader">
+        <div class="col2">Description</div>
+        <div class="col3">Registration number</div>
+        <div class="col4">Year model</div>
+        <div class="col5">Value</div>
+        <div class="col6">Outstanding value</div>
+        <div class="col7">Action</div>
+      </div>
+      <div class="mainrow">
+        <div class="col2">BMW X6</div>
         <div class="col3">ABC333GP</div>
         <div class="col4">2017</div>
-        <div class="col5">R 2,000,000<br><br class="smallbr"></div>
-        <div class="col6">R 1,000,000<br><br class="smallbr"></div>
+        <div class="col5">R 2,000,000</div>
+        <div class="col6">R 1,000,000</div>
         <div class="col7">
-          <img src="../images/edit.gif" height="14px">
-          <img src="../images/Delete.gif" height="14px">
+          <input type="button" value="Edit" style="padding:0px;" /><input type="button" value="Delete" style="padding:0px;" />
         </div>
       </div>
       <div class="buttons">

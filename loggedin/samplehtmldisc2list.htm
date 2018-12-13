@@ -4,28 +4,92 @@
      name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
   />
-  <title>eDisclosure Immovable Property list</title>
+  <title>eDisclosure Land list</title>
   <link rel="stylesheet" href="../css/styles.css">
   <style>
     .col1 {
-      width: 21%;
       float: left;
       text-align: center;
       border-right:1px solid black;
     }
     .col2 {
-      width: 38%;
       float: left;
       border-right:1px solid black;
     }
     .col3 {
-      width: 25%;
       float: left;
       border-right:1px solid black;
     }
     .col4 {
-      width: 15%;
       float: left;
+      border-right:1px solid black;
+    }
+    .col5 {
+      float: left;
+      border-right:1px solid black;
+    }
+    .col6 {
+      float: left;
+      border-right:1px solid black;
+    }
+    .col7 {
+      float: left;
+      border-right:1px solid black;
+    }
+    .col8 {
+      float: left;
+    }
+    @media screen and (min-width: 561px) {
+      .col1 {
+        width: 30%;
+      }
+      .col2 {
+        width: 6%;
+      }
+      .col3 {
+        width: 8%;
+      }
+      .col4 {
+        width: 15%;
+      }
+      .col5 {
+        width: 10%;
+      }
+      .col6 {
+        width: 10%;
+      }
+      .col7 {
+        width: 10%;
+      }
+      .col8 {
+        width: 10%;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      .col1 {
+        width: 48%;
+      }
+      .col2 {
+        display: none;
+      }
+      .col3 {
+        display: none;
+      }
+      .col4 {
+        display: none;
+      }
+      .col5 {
+        width: 27%;
+      }
+      .col6 {
+        display: none;
+      }
+      .col7 {
+        display: none;
+      }
+      .col8 {
+        width: 24%;
+      }
     }
     .mainrow {
       width: 99%;
@@ -61,9 +125,9 @@
     <div class="nav">
       <ul>
         <li>eLearning</li>
-        <li>Contacts</li>
+        <li><a href="../loggedin/samplehtmldocumentlist.htm">Documents</a></li>
         <li>My User Profile</li>
-        <li><a href="../loggedin/samplehtmlselectdisclosures.htm">Disclose</li>
+        <li><a href="../loggedin/samplehtmlselectdisclosures.htm">Disclose</a></li>
         <li>Submit</li>
         <li><a href="../samplehtml.htm">Logout</a></li>
       </ul>
@@ -74,35 +138,87 @@
   <h2>
     <center>
       <form action="samplehtmldisc1list.htm">
-        <input style="font-size: 0.7em" type="submit" value="<<">&nbsp;Immovable Property&nbsp;<input style="font-size: 0.7em" type="submit" value=">>">
+        <input style="font-size: 0.7em" type="submit" value="<<">&nbsp;Immovable&nbsp;Property<input style="font-size: 0.7em" type="submit" value=">>">
       </form>
     </center>
   </h2>
   <div>
     <center>
+      <div class="fieldrow">
+        <div class="fieldName">Previous Disclosure Period<font color="red"><b>*</b></font></div>
+        <div class="fieldValue">
+          <select>
+            <option>2015 to 2016</option>
+            <option selected>2016 to 2017</option>
+          </select>
+        </div>
+      </div>
       <div class="mainrow mainrowheader">
-        <div class="col1">Disclosure Period</div>
-        <div class="col2">Description<br><br class="smallbr"></div>
-        <div class="col3">Market Value</div>
-        <div class="col4">Action<br><br class="smallbr"></div>
+        <div class="col1">Description<br><br></div>
+        <div class="col2">Extent (size)</div>
+        <div class="col3">Extent measure<br><br></div>
+        <div class="col4">Area<br><br></div>
+        <div class="col5">Purchase value</div>
+        <div class="col6">Outstanding value</div>
+        <div class="col7">Market value</div>
+        <div class="col8">Action<br><br></div>
       </div>
       <div class="mainrow">
-        <div class="col1">2015 to 2016</div>
-        <div class="col2">House<br><br class="smallbr"></div>
-        <div class="col3">R 1,000,000<br><br class="smallbr"></div>
-        <div class="col4"><img src="../images/lock.gif" height="14px"></div>
+        <div class="col1">House</div>
+        <div class="col2">100</div>
+        <div class="col3">sq m</div>
+        <div class="col4">Pretoria</div>
+        <div class="col5">R 1,000,000</div>
+        <div class="col6">R 500,000</div>
+        <div class="col7">R 1,500,000</div>
+        <div class="col8"><input type="button" value="Copy" style="padding:0px" /></div>
       </div>
       <div class="mainrow">
-        <div class="col1">2016 to 2017</div>
-        <div class="col2">House<br><br class="smallbr"></div>
-        <div class="col3">R 1,200,000<br><br class="smallbr"></div>
-        <div class="col4">
-          <img src="../images/edit.gif" height="14px">
-          <img src="../images/Delete.gif" height="14px">
+        <div class="col1">Empty land</div>
+        <div class="col2">10000</div>
+        <div class="col3">sq m</div>
+        <div class="col4">Pretoria</div>
+        <div class="col5">R 500,000</div>
+        <div class="col6">R 100,000</div>
+        <div class="col7">R 800,000</div>
+        <div class="col8"><input type="button" value="Copy" style="padding:0px" /></div>
+      </div>
+      <div class="fieldrow">
+        <br>
+      </div>
+      <div class="fieldrow">
+        <div class="fieldName">Current Disclosure Period<font color="red"><b>*</b></font></div>
+        <div class="fieldValue">
+          <select>
+            <option></option>
+            <option selected>2017 to 2018</option>
+          </select>
+        </div>
+      </div>
+      <div class="mainrow mainrowheader">
+        <div class="col1">Description<br><br></div>
+        <div class="col2">Extent (size)</div>
+        <div class="col3">Extent measure<br><br></div>
+        <div class="col4">Area<br><br></div>
+        <div class="col5">Purchase value</div>
+        <div class="col6">Outstanding value</div>
+        <div class="col7">Market value</div>
+        <div class="col8">Action<br><br></div>
+      </div>
+      <div class="mainrow">
+        <div class="col1">House</div>
+        <div class="col2">100</div>
+        <div class="col3">sq m</div>
+        <div class="col4">Pretoria</div>
+        <div class="col5">R 1,000,000</div>
+        <div class="col6">R 500,000</div>
+        <div class="col7">R 1,500,000</div>
+        <div class="col8">
+          <input type="button" value="Edit" style="padding:0px;" /><input type="button" value="Delete" style="padding:0px;" />
         </div>
       </div>
       <div class="buttons">
-        <form action="samplehtmldisc2edit.htm"><input type="submit" value="Capture immovable property"></form>
+        <form action="samplehtmldisc2edit.htm"><input type="submit" value="Capture property"></form>
       </div>
     </center>
   </div>

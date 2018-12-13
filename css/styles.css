@@ -8,6 +8,9 @@
     select {
       font-size: 100%;
     }
+    textarea {
+      font-size: 100%;
+    }
     input {
       font-size: 100%;
     }
@@ -93,6 +96,12 @@
         padding-left: 2%;
         text-align: left;
       }
+      .fieldnameS {
+        width:60%;
+        float: left;
+        padding-left: 2%;
+        text-align: right;
+      }
       .fieldvalue {
         text-align: left;
         width:55%;
@@ -104,8 +113,14 @@
         float: left;
         text-align: right;
       }
+      .fieldvalueS {
+        width:35%;
+        float: left;
+        text-align: left;
+      }
       .fieldvalue input,
       .fieldvalue select,
+      .fieldvalue textarea,
       .fieldvalue span {
         margin-left:10px;
       }
@@ -178,13 +193,27 @@
         padding-left: 2%;
         text-align: left;
       }
+      .fieldnameS {
+        width:60%;
+        float: left;
+        padding-left: 2%;
+        text-align: left;
+      }
       .fieldvalue {
         text-align: left;
         width:100%;
         padding-bottom: 5px;
       }
+      .fieldvalue textarea {
+        width: 100%;
+      }
       .fieldvalueX {
         width:5%;
+        float: left;
+        text-align: right;
+      }
+      .fieldvalueS {
+        width:35%;
         float: left;
         text-align: right;
       }
