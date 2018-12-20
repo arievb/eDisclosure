@@ -1,0 +1,540 @@
+body {
+font-family:Verdana;
+font-size:8pt;
+color:#000;
+background-color:#EEEEEE;
+}
+#crum
+{
+	font-weight:bold;
+}
+BG {
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000;
+	background-color: #FFF;
+}
+
+th {
+font-size:11pt;
+}
+.imgbutton
+{
+	width:100%;
+	text-align:center;
+	cursor:hand;
+}
+td {
+font-family:Verdana;
+font-size:9pt;
+}
+
+.navcell_link a:active {
+color:#5D8874;
+}
+
+a:active {
+font-weight:700;
+color:#2F4F4F;
+}
+
+a:link {
+color:#17186F;
+font-weight:700;
+}
+
+a:visited {
+color:#4D5D67;
+font-weight:700;
+}
+
+h1 {
+	font-family: Verdana;
+	font-size: 14pt;
+	color: #236296;
+	margin-left: 65px;
+	margin-right: 65px;
+	margin-bottom: 0;
+	text-align: Center;
+	font-weight: 700;
+	border-bottom: thin;
+	border-color: Black;
+	border: thin;
+}
+
+h2 {
+	font-family: Verdana;
+	font-size: 12pt;
+	color: #1D4C76;
+}
+
+h3 {
+font-family:Verdana;
+font-size:10pt;
+color:black;
+font-weight:bold;
+}
+
+h4 {
+font-family:Verdana;
+font-size:8pt;
+color:black;
+font-weight:bold;
+padding-top:30px;
+padding-bottom:10px;
+margin-bottom:0px;
+text-decoration:underline;
+}
+
+h5 {
+font-family:Verdana;
+font-size:8pt;
+color:#F2F2F2;
+font-weight:700;
+}
+
+h6 {
+font-family:Verdana;
+font-size:8pt;
+color:#FFF;
+font-weight:700;
+}
+
+.backtop {
+font-size:8pt;
+color:#BCCECF;
+font-weight:700;
+text-align:center;
+text-decoration:none;
+}
+
+.td_main {
+color:#FFF;
+font-size:8pt;
+font-weight:700;
+background-color:#81AB7D;
+}
+
+.td_main2 {
+color:#FFF;
+font-size:8pt;
+font-weight:700;
+background-color:#C7CAA9;
+}
+
+.td_cell {
+	color: Black;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: #D1D1D1;
+}
+
+.td_cell_w_border {
+	color: #0C0C0C;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: #F5F6FD;
+	border: 1px solid #81AB7D;
+}
+
+.td_cell2 {
+	color: #0C0C0C;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: #E2CFB6;
+}
+
+.headrow {
+background-color:#FFF;
+color:#fff;
+height:15pt;
+font-weight:700;
+font-size:8pt;
+}
+
+.topnav a:active {
+color:#483D8B;
+font-weight:700;
+font-size:8pt;
+}
+
+.topnav a:link {
+color:#708090;
+font-weight:700;
+font-size:8pt;
+}
+
+.topnav a:visited {
+color:#E2E2E2;
+font-weight:700;
+font-size:8pt;
+}
+
+.MenuBody {
+background-color:#FFF;
+margin-left:5px;
+}
+
+.nav {
+width:100%;
+color:#FFF;
+font-family:Arial;
+background-color:#fff;
+}
+
+.navcell {
+border-right:#000;
+border-top:#000;
+border-left:#000;
+border-bottom:#000;
+background-color:#DCDCDC;
+}
+
+.td_tab {
+font-family:Arial;
+text-align:center;
+}
+
+.td_tab_selected {
+font-weight:700;
+font-family:Arial;
+background-color:#C8E5C9;
+text-align:center;
+}
+
+.td2 {
+background-color:#EEEEEE;
+background-repeat:repeat-y;
+}
+
+.td_viewhead {
+	width: 18%;
+	color: #6E7E8D;
+	text-align: center;
+}
+
+.td_viewhead2 {
+width:18%;
+color:#fff;
+background-color:#9f88b7;
+text-align:center;
+padding-right:10px;
+}
+
+.td_viewdata {
+background-color:#F0F0F0;
+padding-left:10px;
+padding-right:10px;
+}
+
+.listing {
+width:100%;
+background-color:#D9DEE1;
+}
+
+.td_list {
+	font-size: 8pt;
+	color: #4A5A64;
+	background-color: #E3E3E3;
+	padding: 2px;
+}
+
+.td_list_alt {
+font-size:9pt;
+color:#556371;
+background-color:#EEF5FD;
+padding:2px;
+}
+
+.td_editlabel {
+width:18%;
+color:#fff;
+background-color:#C2C9D0;
+}
+
+.td_editfield {
+padding-right:10px;
+padding-left:10px;
+background-color:#EEE;
+}
+
+.td_editsubmit {
+text-align:center;
+padding:15px;
+}
+
+.submit_button {
+color:#FFF;
+background-color:#00015E;
+width:130px;
+}
+
+.table_poll1 {
+width:100%;
+border:0;
+background-color:#000171;
+}
+
+.td_forum_cell1 {
+width:15%;
+color:#fff;
+background-color:#9f88b7;
+text-align:right;
+padding-right:10px;
+font-size:8pt;
+vertical-align:top;
+}
+
+.td_forum_info {
+width:8%;
+color:#fff;
+background-color:#476E5B;
+text-align:center;
+padding-right:10px;
+font-size:8pt;
+}
+
+.td_forum_cell_messg {
+color:#006601;
+background-color:#6E818D;
+text-align:left;
+padding-right:10px;
+}
+
+.td_forum_heading {
+background-color:#E9E9E9;
+text-align:center;
+padding-right:10px;
+font-weight:700;
+}
+
+.td_poll_header {
+width:100%;
+background-color:#9f88b7;
+}
+
+.td_poll_data {
+width:100%;
+background-color:Navy;
+}
+
+.table_forum_main {
+border:6px;
+padding:100px;
+}
+
+IMG {
+border:0;
+}
+
+.navcell_link a:link,.navcell_link a:visited {
+color:#547C72;
+}
+
+.maintable,.tabs,.viewing,.editing {
+width:100%;
+}
+
+/* Styles for paged List */
+.indexDiv
+{
+}
+.indexTable
+{
+	padding:0px;
+	margin:0px;
+}
+.indexPrev
+{
+	width:30%;
+	background-color: #DCDCDC;
+	width:10%;
+	vertical-align:top;
+	padding:0px;
+	margin:0px;
+}
+.indexPrevNo
+{
+	width:30%;
+	background-color: #DCDCDC;
+	width:10%;
+	vertical-align:top;
+	padding:0px;
+	margin:0px;
+}
+
+a.prevLink:visited
+{
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.pageList
+{
+	background-color:#DCDCDC;
+	border:solid 2px #DCDCDC;
+	text-align:center;
+	padding:0px;
+	margin:0px
+}
+a.pageNo:link,a.pageNo:visited
+{
+	padding-top:2px;
+	padding-left:4px;
+	padding-right:4px;
+	background-color:#DCDCDC;
+	text-align:center;
+}
+a.pageNoSel:link,a.pageNoSel:visited
+{
+	padding-top:2px;
+	border:insert 2px #DCDCDC;
+	padding-left:4px;
+	padding-right:4px;
+	background-color: #DCDCDC;
+	text-align:center;
+}
+.pageNoBox
+{
+	width:70px;
+	background-color: White;
+}
+.pageNoBtn
+{
+	width:40px;
+}
+
+.indexNext
+{
+	text-align:right;
+	background-color: #DCDCDC;
+	width:10%;
+	vertical-align:top;
+	padding:0px;
+	margin:0px
+}
+.indexNextNo
+{
+	text-align:right;
+	background-color: #DCDCDC;
+	width:10%;
+	vertical-align:top;
+	padding:0px;
+	margin:0px
+}
+
+a.nextLink:link,a.nextLink:visited
+{
+	font-size:10pt;
+	font-weight:bold;
+}
+.resultsRow
+{
+	
+}
+.resultsCell
+{
+	background-color:#DCDCDC;
+	border:solid 2px blank;
+	font-weight:bold;
+	font-size:10pt;
+	text-align:center;
+}
+
+/***** Styles for Multi Adder Controll *******/
+.adderBtn 
+{
+	color: White;
+	background-color: #00015E;
+	width: 70px;
+}
+.adderList
+{
+	width:100%;
+	height:100%;
+	background-color:#E3E8E6;
+	height:60;
+	overflow:auto;
+	border-style:none;
+}
+
+.adderTbl
+{
+}
+
+/********* Styles for Tree Controll **************/
+.node 
+{
+	width:100%;
+}
+.tree
+{
+	list-style:none;
+}
+.nodeBlock
+{
+	width:100%;
+	padding-left:0px;
+	margin-left:0px;
+	list-style:none;
+	border-left:dotted 1px black;
+}
+.nodeBlock li
+{
+	margin-left:10px;
+}
+.grouItem
+{
+	margin-top:5px;
+}
+.nodeName
+{
+	font-weight:bold;
+	border-style:none;
+	padding:0px;
+	margin:0px;
+	background-color:transparent;
+	cursor:inherit;
+}
+.nodeNav
+{
+	width:2%;
+	cursor:pointer;
+}
+.dotLeader
+{
+	padding:0px;
+	margin:0px;
+	vertical-align: middle;
+	width:4px;
+	vertical-align: super;
+	line-height:55%
+}
+.pageTable 
+{
+	width:100%;
+}
+.tight
+{
+	padding:0px;
+	margin:opx;
+}
+
+/******************** Styles fro action Buttons *********************/
+.action_button {
+color:#FFF;
+background-color:#00015E;
+width:150px;
+}
+
+.alert
+{
+	background-image:url('../../images/alert.gif'); 
+	background-repeat: no-repeat;
+	font-size:14;
+	font-weight:bold;
+	color:Red;
+	height:50px;
+	padding-left:40px;
+	vertical-align:middle;
+}
