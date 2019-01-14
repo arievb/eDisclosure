@@ -18,7 +18,7 @@
   <script src="scripts/jquery.js"></script></head>
 </head>
 
-<body style="font-family:verdana; font-size:0.9em" onload="ResizeContent();">
+<body style="font-family:verdana; font-size:0.9em" onload="ResizeContent();" id="theBody">
     	<div id="divHeader">
 	  <img src="images/toplarge.png" width="100%" class="topBannerLarge">
 	  <img src="images/topsmall.png" width="100%" class="topBannerSmall">
@@ -33,7 +33,7 @@
   </div>
   <div id="divMessageFooter" class="message-footer">
     <div id="divMessageFooterText" class="message-footer-text">
-      <input class="submit_button" type="button" value="OK" onclick="document.documentElement.requestFullscreen();getEl(&#39;divMessage&#39;).style.display = &#39;none&#39;;">
+      <input class="submit_button" type="button" value="OK" onclick="getEl('theBody').requestFullscreen();getEl(&#39;divMessage&#39;).style.display = &#39;none&#39;;">
     </div>
   </div>
 </div>
