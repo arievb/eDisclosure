@@ -1,6 +1,6 @@
     body {
-      xcolor: red;
       font-size: 9pt;
+      font-family: verdana;
     }
     select option{
       font-size: 100%;
@@ -10,6 +10,7 @@
     }
     textarea {
       font-size: 100%;
+      font-family: verdana;
     }
     input {
       font-size: 100%;
@@ -31,6 +32,7 @@
       width: 20%;
       background: #000;
       float:left;
+      height: 3em;
     }
     .clearfix::after {
       content: "";
@@ -42,6 +44,7 @@
       background: #000;
       text-align: right;
       float: right;
+      height: 3em;
     }
     .menu-button ul,
     .home ul,
@@ -72,9 +75,34 @@
       width: 100%;
       float: left;
     }
+    #divHeader {
+      text-align: center;
+    }
+    .compulsory {
+      color: red;
+      font-weight: bold;
+    }
+    
+    .submit_button {
+      border-radius: 5px;
+      border: 1px solid #885306;
+      font-weight: bold;
+      background: #f2b55a;
+      padding: 0.3em;
+      padding-left: 1em;
+      padding-right: 1em;
+      -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      cursor: hand;
+    }
+    
+    
     @media screen and (min-width: 561px) {
       body {
         xcolor:green;
+      }
+      .topBannerLarge {
+        max-width: 960px;
       }
       .menu-button,
       .topBannerSmall, 
@@ -159,6 +187,9 @@
       .menu-button {
         display: block;
       }
+      .menu-seperator {
+        display: none !important;
+      }
       .nav ul {
         display:none;
       }
@@ -179,6 +210,9 @@
         width: 100%;
 	      padding: 10px 0;
 	      margin: 0;
+      }
+      .menu:hover {
+        height: auto;
       }
       .menu:hover ul {
         display: block;
