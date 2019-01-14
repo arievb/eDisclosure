@@ -1,0 +1,10 @@
+window.onclick = function(event) {
+  if (event.target == getEl('divMessage')) {
+    //getEl('divMessage').style.display = "none";
+  }
+}
+
+function ShowMessage(messageContent) {
+  getEl("divMessageContent").innerHTML = messageContent;
+  getEl('divMessage').style.display = "block";
+}
