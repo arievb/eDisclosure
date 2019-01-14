@@ -6,7 +6,7 @@
 		
 		<link rel="icon" href="http://test.edisclosure.gov.za/www/images/edisclosure.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="http://test.edisclosure.gov.za/www/images/edisclosure.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="./eDisclosure Registration Detail_files/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="./eDisclosure Registration Detail_files/messages.css">
 		<title>
 			eDisclosure Registration Detail
@@ -228,7 +228,7 @@
       <div class="fieldvalue popup">
         <input id="password" name="password" value="" compulsory;password="" 
                lang="Password;compulsory;password" size="20" type="password"
-               onfocus="showFieldHint('spanPasswordMessage1');"
+               onfocus="showFieldHint('spanPasswordMessage1');checkPassword('password');"
                onblur="hideFieldHint('spanPasswordMessage1');"
                oninput="checkPassword('password');">
         <div class="popuptext" id="spanPasswordMessage1">
@@ -252,7 +252,7 @@
       <div class="fieldvalue popup">
         <input id="password_2" name="password_2" value="" compulsory;equals:password="" 
                lang="Verify password;compulsory;equals:password" size="20" type="password"
-               onfocus="showFieldHint('spanPasswordMessage2');"
+               onfocus="showFieldHint('spanPasswordMessage2');checkTheSame('password_2','password','divNotConform1s','spanNotConform1s');"
                onblur="hideFieldHint('spanPasswordMessage2');"
                oninput="checkTheSame('password_2','password','divNotConform1s','spanNotConform1s');">
         <div class="popuptext" id="spanPasswordMessage2">
