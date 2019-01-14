@@ -168,15 +168,70 @@
       function showFieldHelp(fieldID) {
         ShowMessage(arFieldHelp[0]);
       }
-    </script>
-    <div class="fieldrow" class="position: relative; display: inline-block;">
+      
+      var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+      var lowercase = "abcdefghijklmnopqrstuvwxyz"; 
+      var numbers = "0123456789"; 
+      var punctuation = "!.@$£#*()%~<>{}[]"; 
+      
+      function checkPassword(passwordFieldName) { 
+      	var groups='';
+       
+        var password = getEl(passwordFieldName).value;
+        
+        if (password.length > 7) {
+          groups += 'c';
+        }
+        if (contains(password, numbers) > 0) { 
+          groups += 'n';
+        } 
+        if (contains(password, lowercase) > 0) {
+          groups += 'l';
+        } 
+        if (contains(password, uppercase) > 0) { 
+          groups += 'u';
+        } 
+        if (contains(password, punctuation) > 0) { 
+          groups += 's';
+        }
+        var allGroups = "clnsu";
+        //alert(groups);
+        for (group = 0; group < allGroups.length; group++) {
+          var divGroup = getEl('divConform1' + allGroups.substring(group, group + 1));
+          var spanGroup = getEl('spanConform1' + allGroups.substring(group, group + 1));
+          if (groups.indexOf(allGroups.substring(group, group + 1)) >= 0) {
+            divGroup.classList = "conform";
+            spanGroup.innerHTML = "&#10004;";
+          }
+          else {
+            divGroup.classList = "notconform";
+            spanGroup.innerHTML = "&#10006;";
+          }
+        }
+      }
+      function checkTheSame(fieldName1, fieldName2, divFieldName, spanFieldName) {
+        var fieldValue1 = getEl(fieldName1).value;
+        var fieldValue2 = getEl(fieldName2).value;
+        var divField = getEl(divFieldName);
+        var spanField = getEl(spanFieldName);
+        if (fieldValue1 == fieldValue2) {
+          divField.classList = "conform";
+          spanField.innerHTML = "&#10004;";
+        }
+        else {
+          divField.classList = "notconform";
+          spanField.innerHTML = "&#10006;";
+        }
+      }
+      </script>
+    <div class="fieldrow">
       <div class="fieldname">Password<font class="compulsory">*</font></div>
       <div class="fieldvalue popup">
         <input id="password" name="password" value="" compulsory;password="" 
                lang="Password;compulsory;password" size="20" type="password"
                onfocus="showFieldHint('spanPasswordMessage1');"
                onblur="hideFieldHint('spanPasswordMessage1');"
-               >
+               oninput="checkPassword('password');">
         <div class="popuptext" id="spanPasswordMessage1">
           <div class="popup-header">
             <div class="popup-header-text">
@@ -184,23 +239,23 @@
             </div>
           </div>
           <div class="popup-content">
-            <div class="conform" id=divConform11><span id=spanConform11>&#10004;</span> at least have 8 characters</div>
-            <div class="conform" id=divConform12><span id=spanConform12>&#10004;</span> contain uppercase letter(s)</div>
-            <div class="notconform" id=divConform13><span id=spanConform13>&#10006;</span> contain lowercase letter(s)</div>
-            <div class="notconform" id=divConform14><span id=spanConform14>&#10006;</span> contain number(s)</div>
-            <div class="notconform" id=divConform15><span id=spanConform15>&#10006;</span> contain special character(s) (!@#$%^*)</div>
+            <div class="notconform" id=divConform1c><span id=spanConform1c>&#10006;</span> at least have 8 characters</div>
+            <div class="notconform" id=divConform1u><span id=spanConform1u>&#10006;</span> contain uppercase letter(s)</div>
+            <div class="notconform" id=divConform1l><span id=spanConform1l>&#10006;</span> contain lowercase letter(s)</div>
+            <div class="notconform" id=divConform1n><span id=spanConform1n>&#10006;</span> contain number(s)</div>
+            <div class="notconform" id=divConform1s><span id=spanConform1s>&#10006;</span> contain special character(s) (!.@$£#*()%~<>{}[])</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fieldrow" class="position: relative; display: inline-block;">
+    <div class="fieldrow">
       <div class="fieldname">Confirm Password<font class="compulsory">*</font></div>
       <div class="fieldvalue popup">
         <input id="password_2" name="password_2" value="" compulsory;equals:password="" 
                lang="Verify password;compulsory;equals:password" size="20" type="password"
                onfocus="showFieldHint('spanPasswordMessage2');"
                onblur="hideFieldHint('spanPasswordMessage2');"
-               >
+               oninput="checkTheSame('password_2','password','divNotConform1s','spanNotConform1s');">
         <div class="popuptext" id="spanPasswordMessage2">
           <div class="popup-header">
             <div class="popup-header-text">
@@ -208,7 +263,7 @@
             </div>
           </div>
           <div class="popup-content">
-            <div class="notconform" id=divNotConform11><span id=spanNotConform11><span>&#10006;</span> be the same as password</div>
+            <div class="notconform" id=divNotConform1s><span id=spanNotConform1s>&#10006;</span> be the same as password</div>
           </div>
         </div>
       </div>
