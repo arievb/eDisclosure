@@ -33,7 +33,7 @@
   </div>
   <div id="divMessageFooter" class="message-footer">
     <div id="divMessageFooterText" class="message-footer-text">
-      <input class="submit_button" type="button" value="OK" onclick="getEl('theBody').requestFullscreen();getEl(&#39;divMessage&#39;).style.display = &#39;none&#39;;">
+      <input class="submit_button" type="button" value="OK" onclick="toggleFullScreen();getEl(&#39;divMessage&#39;).style.display = &#39;none&#39;;">
     </div>
   </div>
 </div>
@@ -153,6 +153,20 @@
 
     </style>
     <script>
+    function toggleFullScreen() {
+      var doc = window.document;
+      var docEl = doc.documentElement;
+    
+      var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+      var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+    
+      if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+        requestFullScreen.call(docEl);
+      }
+      else {
+        cancelFullScreen.call(doc);
+      }
+    }
       function showFieldHint(fieldID) {
         getEl(fieldID).style.visibility='visible';
       }
